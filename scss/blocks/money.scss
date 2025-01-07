@@ -1,0 +1,24 @@
+/* money */
+.money { 
+  padding-top: 6.25em;
+  padding-bottom: 12.5em;
+  background-image: url(../img/money_bg.png);
+  background-size: cover;
+  background-position: top right;
+  &__content {
+    max-width: 52.5em; 
+  }
+  &__title {
+    margin-bottom: 0.5em;
+  }
+  &__text {
+    max-width: 32em;
+    font-size: 1.625em;
+    line-height: 1.4em;
+  }
+  @media (max-width: $break_sm) {
+    padding-bottom: 3em;
+    background-position: top right -30em;
+  }
+}
+/* /money */

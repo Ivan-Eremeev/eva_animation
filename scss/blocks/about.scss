@@ -1,0 +1,71 @@
+/* about */
+.about { 
+  padding-top: 10.625em;
+  padding-bottom: 10.2em;
+  background-image: url(../img/about_bg.png);
+  background-size: cover;
+  &__flex {
+    display: flex; 
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__left {
+    max-width: 56.25em;
+  }
+  &__title {
+    margin-bottom: 0.5em;
+  }
+  &__text {
+    font-size: 1.625em;
+    line-height: 1.4em;
+  }
+  &__right {
+    max-width: 38.75em;
+    padding-top: 0.9em;
+  }
+  &__subtitle {
+    font-size: 1.625em;
+    line-height: 1.4em;
+    font-weight: bold;
+    margin-bottom: 1.6em;
+  }
+  &__subtext {
+    font-size: 1.3125em;
+    line-height: 1.7em;
+    margin-bottom: 1.4em;
+  }
+  &__items {
+    
+  }
+  &__item {
+    display: block;
+    padding: 1.875em 2.5em;
+    border: 0.125em solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    margin-bottom: 2.5em;
+    transition: background-color 0.5s, border-color 0.5s;
+    &:hover {
+      background-color: $primaryColor;
+      border-color: $primaryColor;
+    }
+  }
+  &__name {
+    font-size: 2.6875em;
+    margin-bottom: 0.1em;
+  }
+  &__date {
+    font-size: 1.3125em;
+  }
+  @media (max-width: $break_sm) {
+    padding-top: 4em;
+    padding-bottom: 4em;
+    
+    &__left {
+      margin-bottom: 4em;
+    }
+    &__subtext {
+      margin-bottom: 2.5em;
+    }
+  }
+}
+/* /about */

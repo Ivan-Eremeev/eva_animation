@@ -1,0 +1,103 @@
+/* callback */
+.callback { 
+  &__container {
+    padding: 1.1875em 1.5em;
+    background: linear-gradient(95.79deg, rgba(38, 232, 210, 0.15) 0%, rgba(78, 50, 231, 0.15) 100%);
+  }
+  &__inner {
+    padding: 4.0625em 7.1875em 5.9em;
+    border: 0.25em solid rgba(255, 255, 255, 0.1);
+  }
+  &__title {
+    font-size: 2.625em;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    margin-bottom: 0.3em;
+  }
+  &__text {
+    font-size: 1.3125em;
+    line-height: 1.4em;
+    margin-bottom: 2.7em;
+  }
+  &__form {
+    margin-bottom: 4.3em;
+    > .row {
+      margin-left: -6.75em;
+      margin-top: -3em;
+      > * {
+        padding-left: 6.75em;
+        padding-top: 3em;
+      }
+    }
+  }
+  &__col {
+    @include col(4);
+    @include col-sm(12);
+  }
+  &__input {
+    position: relative;
+    input {
+      width: 100%;
+      height: 3em;
+      background: transparent;
+      border: none;
+      font-size: 1.625em;
+      color: #fff;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+      transition: 0.5s;
+      &:hover {
+        border-color: #fff;
+      }
+      &:focus {
+        border-color: #fff;
+        ~ .callback__label {
+          font-size: 0.8em;
+          top: -0.3em;
+        }
+      }
+      &:valid {
+        border-color: #fff;
+        ~ .callback__label {
+          font-size: 0.8em;
+          top: -0.3em;
+        }
+      }
+    }
+  }
+  &__label {
+    font-size: 1.625em;
+    position: absolute;
+    top: 0.8em;
+    left: 0;
+    transition: 0.5s;
+    pointer-events: none;
+  }
+  &__btn {
+    width: 100%;
+    height: 100%;
+  }
+  &__ps {
+    font-size: 1em;
+    a {
+      border-bottom: 1px solid #fff;
+      &:hover {
+        color: $primaryColor;
+        border-color: $primaryColor;
+      }
+    }
+  }
+  @media (max-width: $break_sm) {
+    &__title {
+      font-size: 2.5em;
+    }
+    &__inner {
+      padding: 2em;
+    }
+    &__col {
+      &--btn {
+        padding-top: 6em !important;
+      }
+    }
+  }
+}
+/* /callback */

@@ -1,0 +1,115 @@
+/* settings */
+a {
+  transition: .3s;
+  text-decoration: none;
+  color: $textColor;
+}
+button,
+input,
+textarea {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+}
+body {
+  min-width: 319px;
+  background-color: #090712;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.83vw;
+  color: $textColor;
+  &.lock {
+    overflow: hidden;
+  }
+  @media (max-width: $break_sm) {
+    font-size: 2.5vw;
+  }
+}
+.mobile-hide {
+  @media (max-width: $break_xs) {
+    display: none !important;
+  }
+}
+.mobile-visible {
+  @media (min-width: $break_xs + 1) {
+    display: none !important;
+  }
+}
+.tablet-hide {
+  @media (max-width: $break_sm) {
+    display: none !important;
+  }
+}
+
+.tablet-visible {
+  @media (min-width: $break_sm + 1) {
+    display: none !important;
+  }
+}
+.row {
+  @include row();
+}
+.wrapper {
+  @include wrapper();
+}
+*:-webkit-autofill {
+  -webkit-box-shadow: inset 0 0 0 50px #fff !important;
+}
+*::placeholder {
+  color: #a9a9a9;
+  opacity: 1;
+}
+// .page {
+//   min-height: 100vh;
+//   display: flex;
+//   flex-direction: column;
+//   overflow-x: hidden;
+// }
+// .content {
+//   flex-grow: 1;
+// }
+.title {
+  font-weight: 700;
+  font-size: 3.4375em;
+  line-height: 1.5em;
+  text-transform: uppercase;
+  @media (max-width: $break_sm) {
+    font-size: 2.5em;
+  }
+}
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.15em 2.7em;
+  background-color: $primaryColor;
+  border: none;
+  outline: none;
+  font-size: 1.3125em;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  transition: .5s;
+  img {
+    width: 3em;
+    margin-left: 1.25em;
+    transition: 0.3s;
+  }
+  &:hover {
+    background-color: #4E62E7;
+    box-shadow: 0 0 1.875em rgba(78,50,231, 0.6);
+    img {
+      transform: translate(0.3125em,0);
+    }
+  }
+  @media (max-width: $break_sm) {
+    font-size: 1.8em;
+  }
+}
+
+/* /settings */
+
+/* will-change */
+.welcome__video, .welcome__container, .header, .advantages__title, .advantages__item, .whatget__title, .whatget__text, .whatget__item, .callback, .callback__title, .callback__text, .callback__input, .callback__btn, .callback__ps, .guarantees, .guarantees__title, .guarantees__sub, .guarantees__text, .guarantees__btn, .money__title, .money__text, .about__title, .about__text, .about__subtitle, .about__subtext, .about__item, .video, .video__title, .video__list, .video__list li, .video__btn, .video__price { 
+  will-change: transform;
+}
+/* /will-change */

@@ -1,0 +1,66 @@
+/* advantages */
+.advantages { 
+  padding-top: 6.3em;
+  padding-bottom: 17.5em;
+  background-image: url(../img/advantages_bg.png);
+  background-size: cover;
+  background-position: top right; 
+  &__title {
+    max-width: 20em;
+    margin-bottom: 1.8em;
+  }
+  &__items {
+    max-width: 85em;
+    margin-left: auto;
+    margin-right: auto;
+    > .row {
+      margin-top: -7.5em;
+      margin-left: -7.5em;
+      > * {
+        padding-top: 7.5em;
+        padding-left: 7.5em;
+      }
+    }
+  }
+  &__col {
+    @include col(6);
+    @include col-sm(12);
+  }
+  &__item {
+    display: flex;
+    padding-bottom: 2em;
+    border-bottom: 0.25em solid rgba(255, 255, 255, 0.1);
+  }
+  &__icon {
+    width: 6.25em;
+    margin-right: 2.5em;
+    flex-shrink: 0;
+  }
+  &__content {
+    padding-top: 1.7em;
+  }
+  &__subtitle {
+    font-size: 1.625em;
+    line-height: 1.5em;
+    font-weight: bold;
+    margin-bottom: 0.8em;
+  }
+  &__text {
+    font-size: 1.3125em;
+      line-height: 1.5em
+  }
+  @media (max-width: $break_sm) {
+    padding-top: 7em;
+    padding-bottom: 5em;
+    background-position: top right -31.25em;
+    &__items {
+      > .row {
+        margin-top: -2.5em;
+        > * {
+          padding-top: 2.5em;
+        }
+      }
+    }
+  }
+}
+/* /advantages */

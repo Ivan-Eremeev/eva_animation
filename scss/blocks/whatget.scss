@@ -1,0 +1,63 @@
+/* whatget */
+.whatget { 
+  padding-top: 6.4em;
+  padding-bottom: 17.5em;
+  background-image: url(../img/whatget_bg.png);
+  background-size: cover;
+  background-position: top left;
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 7.5em;
+  }
+  &__content {
+    max-width: 54em;
+  }
+  &__title {
+    margin-bottom: 0.5em;
+  }
+  &__text {
+    font-size: 1.625em;
+    line-height: 1.4em;
+  }
+  &__items {
+    max-width: 41.25em;
+    margin-top: -1.4em;
+  }
+  &__item {
+    padding-left: 6.25em;
+    padding-top: 1.83em;
+    padding-bottom: 1.83em;
+    border-bottom: 0.25em solid rgba(255, 255, 255, 0.1);
+  }
+  &__item-title {
+    font-size: 1.625em;
+    font-weight: bold;
+    line-height: 1.5em;
+    position: relative;
+    margin-bottom: 1em;
+    &:after {
+      content: '';
+      display: block;
+      width: 2.3em;
+      height: 1px;
+      background-color: #26E8D2;
+      position: absolute;
+      top: 50%;
+      right: calc(100% + 1.4em);
+    }
+  }
+  &__item-text {
+    font-size: 1.3125em;
+    line-height: 1.4em;
+  }
+  @media (max-width: $break_sm) {
+    padding-top: 5em;
+    padding-bottom: 8em;
+    &__content {
+      margin-bottom: 7em;
+    }
+  }
+}
+/* /whatget */

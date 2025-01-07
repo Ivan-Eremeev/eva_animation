@@ -1,0 +1,40 @@
+/* guarantees */
+.guarantees { 
+  padding-top: 6.3em;
+  padding-bottom: 17.5em;
+  background-image: url(../img/guarantees_bg.png);
+  background-size: cover;
+  &__content {
+    max-width: 47.5em;
+  }
+  &__title {
+    margin-bottom: 0.5em;
+  }
+  &__sub {
+    font-size: 1.625em;
+    line-height: 1.4em;
+    padding-bottom: 1.8em;
+    border-bottom: 0.25em solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 2em;
+  }
+  &__text {
+    font-size: 1.3125em;
+    line-height: 1.4em;
+    margin-bottom: 1.8em;
+  }
+  &__btn {
+    
+  }
+  @media (max-width: $break_sm) {
+    padding-bottom: 7em;
+    &__text {
+      margin-bottom: 4em;
+    }
+    &__btn {
+      .btn {
+        width: 100%;
+      }
+    }
+  }
+}
+/* /guarantees */

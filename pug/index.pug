@@ -1,0 +1,182 @@
+extends core/base.pug
+
+block title 
+  title Главная
+
+block content
+
+  .page 
+
+    .content 
+
+      include core/header.pug
+
+      // welcome
+      section.welcome#welcomeVideo
+        .wrapper 
+          .welcome__container
+            h1.welcome__title.title безопасное инвестирование в криптовалюту
+            .welcome__content
+              .welcome__text Торгуйте на SPOT только самыми надежными крипто-монетми и получайте прибыль от 4 до 8% в месяц.
+              .welcome__btn
+                a(href="#").btn Подробнее
+                  img(src="img/link_arrow.svg", alt="")
+        video(autoplay playsinline loop muted preload="auto" poster="video/main_bg_x264.jpg").welcome__video(data-speed="0.7")
+            source(src="video/main_bg_x264.mp4" type="video/mp4")
+      // /welcome
+
+      // advantages
+      section.advantages
+        .wrapper 
+          h2.advantages__title.title Инвестиции в криптовалюту – это безопасно, выгодно и популярно
+          .advantages__items 
+            .row 
+              .advantages__col
+                .advantages__item.advantages__item--1
+                  .advantages__icon 
+                    img(src="img/advantages_icon-1.svg", alt="")
+                  .advantages__content 
+                    .advantages__subtitle Децентрализация
+                    .advantages__text Отсутствие регуляции со стороны государства и банков
+              .advantages__col 
+                .advantages__item.advantages__item--2
+                  .advantages__icon 
+                    img(src="img/advantages_icon-2.svg", alt="")
+                  .advantages__content 
+                    .advantages__subtitle Скорость транзакции
+                    .advantages__text Переводы по всему миру за несколько минут
+              .advantages__col 
+                .advantages__item.advantages__item--3
+                  .advantages__icon 
+                    img(src="img/advantages_icon-3.svg", alt="")
+                  .advantages__content 
+                    .advantages__subtitle Анонимность
+                    .advantages__text Невозможно вычислить данные отправителя и получателя криптовалюты
+              .advantages__col 
+                .advantages__item.advantages__item--4
+                  .advantages__icon 
+                    img(src="img/advantages_icon-4.svg", alt="")
+                  .advantages__content 
+                    .advantages__subtitle Альтернатива
+                    .advantages__text Отличный вариант инвестирования в условиях мирового кризиса
+      // /advantages
+
+      // whatget
+      section.whatget
+        .wrapper 
+          .whatget__row 
+            .whatget__content 
+              h2.whatget__title.title(gsap-show="top") Торгуй по стратегии проверенной временем с крипто-ботом Eva
+              .whatget__text(gsap-show="top") Использование роботов для торговли отличный способ инвестирования для новичков и профессионалов
+            .whatget__items
+              .whatget__item(gsap-show="top")
+                .whatget__item-title Торгует на SPOT секции без маржи и плечей
+                .whatget__item-text Самый безопасный метод инвестирования
+              .whatget__item(gsap-show="top")
+                .whatget__item-title Самый безопасный метод инвестирования
+                .whatget__item-text От 2 до 8% в месяц, в зависимости от фазы рынка
+              .whatget__item(gsap-show="top")
+                .whatget__item-title Получайте прибыль 24/7
+                .whatget__item-text Крипто рынок работает в выходные и праздничные дни
+              .whatget__item(gsap-show="top")
+                .whatget__item-title Полностью автоматизирован
+                .whatget__item-text Вам не требуется знаний стратегий и принципов торговли
+              .whatget__item(gsap-show="top")
+                .whatget__item-title Проверенная стратегия
+                .whatget__item-text Eva использует авторские индикаторы для входа в сделки
+              .whatget__item(gsap-show="top")
+                .whatget__item-title Диверсификация
+                .whatget__item-text Робот торгует одновременно несколькими крипто-монетами
+              
+          // callback
+          .callback
+            .callback__container
+              .callback__inner 
+                .callback__title Оставить заявку на звонок
+                .callback__text Оставте заявку, наш партнер свяжется с Вами и расскажет подробнее
+                form(action="#" autocomplete="off").callback__form 
+                  .row 
+                    .callback__col 
+                      .callback__input 
+                        input(type="text", name="name" maxlength="30" required)
+                        .callback__label Ваше имя
+                    .callback__col 
+                      .callback__input 
+                        input(type="text", name="tel" inputmode="tel" required).js-mask-tel
+                        .callback__label Ваш телефон
+                    .callback__col.callback__col--btn
+                      button(type="submit").callback__btn.btn Отправить
+                        img(src="img/link_arrow.svg", alt="")
+                .callback__ps Оставляя завку, Вы соглашаетесь на 
+                  a(href="#") политику обработки персональной информации
+          // /callback
+
+      // /whatget
+
+      // guarantees
+      section.guarantees
+        .wrapper 
+          .guarantees__content 
+            h2.guarantees__title.title Надежный брокер - залог сохранности депозита
+            .guarantees__sub Мы работает только с самими надежными и проверенными брокерами.
+            .guarantees__text
+              span Binance 
+              | – самый надежный, популярный брокер, который предоставляет набор только проверенных инструментов с высокой ликвидностью
+            .guarantees__btn
+              .btn Открыть счёт
+                img(src="img/link_arrow.svg", alt="")
+      // /guarantees
+
+      // money
+      section.money
+        .wrapper 
+          .money__content 
+            h2.money__title.title Ваши деньги остаются на вашем счете
+            .money__text Мы НЕ берем деньги в управление на свои счета, вы открываете счет у брокера, а крипто-боту предоставляете только возможность совершать торговые операции на своем счете.
+      // /money
+
+      // about
+      section.about
+        .wrapper 
+          .about__flex 
+            .about__left 
+              h2.about__title.title Роботы нашей компании зарабатывают деньги с 2019 года.
+              .about__text Magnum SK – компания, которая начала свой пусть с Forex роботов еще в 2019 году и преуспев в этом перенесла проверенные и надежные инструменты на крипто рынок.
+            .about__right 
+              .about__subtitle Форекс робот Archie PRO уже 3 года радует своих клиентов достойной прибылью.
+              .about__subtext Посмотрите независимый мониторинг некоторых счетов:
+              .about__items 
+                a(href="#").about__item
+                  .about__name Archie PRO 
+                  .about__date с ноября 2019
+                a(href="#").about__item
+                  .about__name Archie PRO 
+                  .about__date с марта 2020
+                a(href="#").about__item
+                  .about__name Archie PRO 
+                  .about__date с февраля 2020
+      // /about
+
+      // video
+      section.video
+        .video__container
+          video(muted poster="video/box_bg_x264.jpg").video__video.video-background
+            source(src="video/box_bg_x264.mp4" type="video/mp4")
+          img(src="video/box_bg_x264-mobile.jpg", alt="").video__img-mobile
+          .wrapper 
+            .video__content 
+              h2.video__title.title Крипто-бот Eva - это надежный инструмент инвестирования.
+              ul.video__list
+                li Полностью автоматизирован
+                li Торгует  по 8 крипто-монетам
+                li Авторский алгоритм и индикаторы
+                li Торгует 24/7
+              .video__bottom 
+                .video__btn 
+                  .btn Заказать
+                    img(src="img/link_arrow.svg", alt="")
+                .video__price 400 USD 
+                  span / год
+      // /video
+
+      include core/footer.pug
