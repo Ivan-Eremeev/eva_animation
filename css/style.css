@@ -370,7 +370,7 @@ body.lock {
 .advantages {
   padding-top: 6.3em;
   padding-bottom: 17.5em;
-  background-image: url(../img/advantages_bg.png);
+  background-image: url(../img/advantages_bg.webp);
   background-size: cover;
   background-position: top right;
 }
@@ -444,7 +444,7 @@ body.lock {
 .whatget {
   padding-top: 6.4em;
   padding-bottom: 17.5em;
-  background-image: url(../img/whatget_bg.png);
+  background-image: url(../img/whatget_bg.webp);
   background-size: cover;
   background-position: top left;
 }
@@ -624,7 +624,7 @@ body.lock {
 .guarantees {
   padding-top: 6.3em;
   padding-bottom: 17.5em;
-  background-image: url(../img/guarantees_bg.png);
+  background-image: url(../img/guarantees_bg.webp);
   background-size: cover;
 }
 .guarantees__content {
@@ -662,7 +662,7 @@ body.lock {
 .money {
   padding-top: 6.25em;
   padding-bottom: 12.5em;
-  background-image: url(../img/money_bg.png);
+  background-image: url(../img/money_bg.webp);
   background-size: cover;
   background-position: top right;
 }
@@ -689,7 +689,7 @@ body.lock {
 .about {
   padding-top: 10.625em;
   padding-bottom: 10.2em;
-  background-image: url(../img/about_bg.png);
+  background-image: url(../img/about_bg.webp);
   background-size: cover;
 }
 .about__flex {
