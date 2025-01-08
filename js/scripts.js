@@ -1,11 +1,13 @@
 window.onload = function () {
 
   // JQueryInputmask | Маска для поля ввода телефона
-  $('.js-mask-tel').inputmask({
-    mask: '7 999 999 99 99',
-    placeholder: '',
-    showMaskOnHover: false
-  });
+  const inputTel = document.getElementById('maskTel');
+
+  Inputmask({
+    'mask': '7 999 999 99 99',
+    'placeholder': '',
+    'showMaskOnHover': false
+  }).mask(inputTel);
 
   // ** GSAP || Анимация **
   gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
@@ -441,7 +443,6 @@ window.onload = function () {
 
       const video = document.querySelector(".video-background");
       let src = video.currentSrc || video.src;
-      console.log(video, src);
 
       /* Make sure the video is 'activated' on iOS */
       function once(el, event, fn, opts) {
